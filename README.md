@@ -26,12 +26,16 @@ Create 2 message queues one to push input values and the second to keep the calc
 
 
 1. REST Service to push data  - 
+
 URL  - http://<host>:<port>/unicotest-web/context/gcdrestservice/push
+
 Message Body - i1=100&i2=120
 
 
 2. REST Service to List all the pushed data
+
 URL - http://<host>:<port>/unicotest-web/context/gcdrestservice/list
+
 Message Body - Blank
 
 
@@ -40,6 +44,7 @@ Message Body - Blank
 
 Client stub can be created using WSDL exposed at http://<host>:<port>/unicotest-web/GCDService?wsdl
 Following are the soap requests operations:
+
 1. gcd
 Fetches first two elements from message queue gcdRestQueue and find the GCd of it and pushes the result in gcdsoapqueue
 
